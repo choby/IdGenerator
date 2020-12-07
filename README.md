@@ -11,7 +11,8 @@ var id = worker.NextId();
 ## id混淆器
 ```csharp
 var idObfuscator = new IdObfuscator();
-ulong i = ulong.MaxValue;
-var feistelID = idObfuscator.Permute(id);
-var base62 = idObfuscator.PermuteToBase62(id); // 62进制
+ulong i = ulong.MaxValue; // 18446744073709551615
+var feistelID = idObfuscator.Permute(id); //14585380100699608688
+var reFeistelID = idObfuscator.Permute(feistelID); // 18446744073709551615
+var base62 = idObfuscator.PermuteToBase62(id); // 62进制:dLNS46oypRo
 ```
