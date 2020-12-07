@@ -13,5 +13,5 @@ var id = worker.NextId();
 var idObfuscator = new IdObfuscator();
 ulong i = ulong.MaxValue;
 var feistelID = idObfuscator.Permute(id);
- var base62 = idObfuscator.PermuteToBase62(id); // 62进制
+var base62 = idObfuscator.PermuteToBase62(id); // 62进制
 ```
