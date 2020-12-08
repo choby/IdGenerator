@@ -3,8 +3,17 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <Authors>choby</Authors>
+    <Description>Id生成器, 包含雪花算法和id混淆器</Description>
+    <PackageId>IdGenerator.Net</PackageId>
+    <Owners>choby</Owners>
+    <PackageProjectUrl>https://github.com/choby/IdGenerator</PackageProjectUrl>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Snowflake\" />
     <Folder Include="Obfuscat\" />
