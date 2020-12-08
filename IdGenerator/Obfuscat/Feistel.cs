@@ -44,17 +44,17 @@ namespace IdGenerator.Obfuscat
         /// <returns>加密后的id</returns>
         public uint Permute(uint n)
         {
-            uint l1 = (n >> 18) & 262143;
-            uint r1 = n & 262143;
+            uint l1 = (n >> 16) & 65535;
+            uint r1 = n & 65535;
             uint l2, r2;
             for (int i = 0; i < 3; i++)
             {
                 l2 = r1;
-                r2 = l1 ^ (uint)(RoundFunction(r1) * 262143);
+                r2 = l1 ^ (uint)(RoundFunction(r1) * 65535);
                 l1 = l2;
                 r1 = r2;
             }
-            return ((r1 << 18) + l1);
+            return ((r1 << 16) + l1);
         }
 
        
