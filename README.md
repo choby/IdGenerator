@@ -1,6 +1,10 @@
 # IdGenerator
 id生成器, 包含雪花算法和id混淆器
 
+```powershell
+Install-Package IdGenerator.Net -Version 1.0.0
+```
+
 ## 雪花算法
 
 SnowFlake是Twitter公司采用的一种算法，目的是在分布式系统中产生全局唯一且趋势递增的ID。
