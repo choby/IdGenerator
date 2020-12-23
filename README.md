@@ -1,8 +1,10 @@
 # IdGenerator
-id生成器, 包含雪花算法和id混淆器, 项目地址: [https://github.com/choby/IdGenerator](https://github.com/choby/IdGenerator)
+IdGenerator, include SnowFlake and Id Obfuscator
+id生成器, 包含雪花算法和id混淆器
+项目地址: [https://github.com/choby/IdGenerator](https://github.com/choby/IdGenerator)
 
 ```powershell
-Install-Package IdGenerator.Net -Version 1.0.0
+Install-Package IdGenerator.Net
 ```
 
 ## 雪花算法
