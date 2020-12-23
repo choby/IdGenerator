@@ -44,7 +44,7 @@ Feistel加密算法能够产生一个非常好用的特点，那就是，在一�
 
 ```csharp
 var idObfuscator = new IdObfuscator();
-ulong i = ulong.MaxValue; // 18446744073709551615
+ulong id = ulong.MaxValue; // 18446744073709551615
 var feistelID = idObfuscator.Permute(id); //14585380100699608688
 var reFeistelID = idObfuscator.Permute(feistelID); // 18446744073709551615
 var base62 = idObfuscator.PermuteToBase62(id); // 62进制:dLNS46oypRo
