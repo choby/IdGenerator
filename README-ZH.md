@@ -1,4 +1,4 @@
-# IdGenerator
+# IdGenerator <a href="https://www.nuget.org/packages/IdGenerator.Net/"><img src="http://img.shields.io/nuget/v/IdGenerator.Net.svg?style=flat-square" alt="NuGet version" height="18"></a>
 IdGenerator, include SnowFlake and Id Obfuscator
 id生成器, 包含雪花算法和id混淆器
 项目地址: [https://github.com/choby/IdGenerator](https://github.com/choby/IdGenerator)
